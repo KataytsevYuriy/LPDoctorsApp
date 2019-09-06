@@ -12263,11 +12263,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C#\\Core\\LPDoctorsApp\\LPDoctorsApp\\LPDoctorsApp.csproj",
+      "projectUniqueName": "E:\\Projects\\LPDoctorsApp\\LPDoctorsApp\\LPDoctorsApp.csproj",
       "projectName": "LPDoctorsApp",
-      "projectPath": "E:\\C#\\Core\\LPDoctorsApp\\LPDoctorsApp\\LPDoctorsApp.csproj",
+      "projectPath": "E:\\Projects\\LPDoctorsApp\\LPDoctorsApp\\LPDoctorsApp.csproj",
       "packagesPath": "C:\\Users\\Yuriy&Irina\\.nuget\\packages\\",
-      "outputPath": "E:\\C#\\Core\\LPDoctorsApp\\LPDoctorsApp\\obj\\",
+      "outputPath": "E:\\Projects\\LPDoctorsApp\\LPDoctorsApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
