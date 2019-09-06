@@ -1,0 +1,382 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Heals Center";
+}
+
+
+
+<div class="tab-content">
+    <div class="cl-main-window ">
+        <div class="body-width">
+            <div class="cl-main-window-form">
+                <div>
+                    <h4>HEALTH CENTER</h4>
+                    <h2>Catchy/Convincing slogan</h2>
+                    <p>A supporting statement for your Value Proposition to ecourage customers to complite your CTA</p>
+                    <p>BOOKING A VISIT  <span class="fas fa-angle-down fa-1x"></span></p>
+                    @if (!Model.IsOrderNotSended)
+                    {
+                        <form method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group">
+                                <input asp-for="Name" class="form-control" placeholder="YOUR NAME" />
+                                <span asp-validation-for="Name"></span>
+                            </div>
+                            <div class="form-group">
+                                <input asp-for="Email" class="form-control" placeholder="YOUR E-MAIL" />
+                                <span asp-validation-for="Email"></span>
+                            </div>
+                            <div class="form-group">
+                                <input asp-for="VisitDate" type="text" class="form-control" placeholder="SELECT A DATE" value=""
+                                         onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"/>
+                                <span asp-validation-for="VisitDate"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Send" class=" btn btn-dark" />
+                            </div>
+
+                        </form>
+                    }
+                    else
+                    {
+                        <h2>Thank you for ordering our services.</h2>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cl-contacts">
+        <div class="body-width ">
+            <div class="same-height">
+                <div class="col-md-4 col-lg-4  col-sm-4 contact-first">
+                    <i class="fa fa-clock-o fa-3x " aria-hidden="true"></i>
+                    <h2>Working Time</h2>
+                    <br />
+                    <p>Monday - Friday: 8.00 - 17.00</p>
+                    <hr />
+                    <p>Sunday: 8.00 - 17.00</p>
+                    <hr />
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-4 contact-second">
+                    <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                    <h2>Contact us</h2>
+                    <br />
+                    <p><a href="tel:1-222-333-4444"><span>1-222-333-4444</span></a></p>
+                    <br />
+                    <p>Lorem ipsem dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-4 contact-third">
+                    <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+                    <h2>Where are we?</h2>
+                    <br />
+                    <p>Witkiewicza 6</p>
+                    <br />
+                    <p>44-100, Gliwice</p>
+                    <p><a href="https://goo.gl/maps/3AEnyJbPP4ZeUKN78">Get direction on the map</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cl-about">
+        <div class="body-width">
+            <h2>About us</h2>
+            <div class="live-scroll ">
+                <div class="row live-scroll-box col-12">
+                    <div class="col-md-8">
+                        <p>
+                            A few setnetces about your Product. How it help to solve clients problems. Lorem ipsem dolr sit amet, consecteture adipisicing elit, set do A few setnetces about your Product. How it help to solve clients problems. Lorem ipsem dolrsit amet, consectetureadipisicing elit, set do A few setnetces about your Product. How it help to solve clients problems
+                            Lorem ipsem dolr sit amet, consectetureadipisicing elit, set do
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="fas fas-list">
+                            <li class=" fa-check"> Youre value proposition</li>
+                            <li class=" fa-check"> Strong point</li>
+                            <li class="fa-check"> How will this help solve the customer's issues in the future</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row live-scroll-box col-12">
+                    <div class="col-md-8">
+                        <p>
+                            A few setnetces about your Product. How it help to solve clients problems. Lorem ipsem dolr sit amet, consecteture
+                            adipisicing elit, set do
+                            A few setnetces about your Product. How it help to solve clients problems. Lorem ipsem dolr sit amet, consecteture
+                            adipisicing elit, set do
+                            A few setnetces about your Product. How it help to solve clients problems. Lorem ipsem dolr sit amet, consecteture
+                            adipisicing elit, set do
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class=" fas fas-list">
+                            <li class="fa-check"> Youre value proposition</li>
+                            <li class="fa-check"> Strong point</li>
+                            @*<li class="fa-check"> How will this help solve the customer's issues in the future</li>*@
+                        </ul>
+                    </div>
+                </div>
+                <div class="row col-12 live-scroll-box col-12">
+                    <div class="col-md-8">
+                        <p>
+                            A few setnetces about your Product. How it help to solve clients problems. Lorem ipsem dolr sit amet, consecteture
+                            adipisicing elit, set do
+                            A few setnetces about your Product. How it help to solve clients problems. Lorem ipsem dolr sit amet, consecteture
+                            adipisicing elit, set do
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class=" fas fas-list">
+                            <li class="fa-check"> Youre value proposition</li>
+                            <li class="fa-check"> Strong point</li>
+                            <li class="fa-check"> How will this help solve the customer's issues in the future</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row col-12 live-scroll-box col-12">
+                    <div class="col-md-8">
+                        <p>
+                            A few setnetces about your Product. How it help to solve clients problems. Lorem ipsem dolr sit amet, consecteture
+                            adipisicing elit, set do
+
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class=" fas fas-list">
+                            <li class="fa-check"> Youre value proposition</li>
+                            <li class="fa-check"> Strong point</li>
+                            <li class="fa-check"> How will this help solve the customer's issues in the future</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cl-services">
+        <div class="body-width">
+            <h2>Our services</h2>
+            <div class="row live-scroll ">
+                <div class="live-scroll-box col-md-4">
+
+                    <div class="service">
+                        <a class="fas fa-flask fa-4x"></a>
+                        <h2>Laboratory test</h2>
+                        <p>Add a discription of your offer and key benefits</p>
+                    </div>
+                    <div class="service">
+                        <a class="fas fa-wheelchair fa-4x"></a>
+                        <h2>Physiotherapy</h2>
+                        <p>Add a discription of your offer and key benefits</p>
+                    </div>
+                </div>
+                <div class="live-scroll-box col-md-4">
+                    <div class="service">
+                        <a class="fas fa-heartbeat fa-4x"></a>
+                        <h2>Cardiology</h2>
+                        <p>
+                            Add a discription of your offer and key benefits
+                            Add a discription of your offer and key benefits
+                        </p>
+                    </div>
+                    <div class="service">
+                        <a class="fas fa-ambulance fa-flip-horizontal fa-4x"></a>
+                        <h2>Emergency</h2>
+                        <p>Add a discription of your offer and key benefits</p>
+                    </div>
+                </div>
+                <div class="live-scroll-box col-md-4">
+                    <div class="service">
+                        <a class="fas fa-user-md fa-4x"></a>
+                        <h2>Neurology</h2>
+                        <p>Add a discription of your offer and key benefits</p>
+                    </div>
+                    <div class="service">
+                        <a class="fas fa-stethoscope fa-4x"></a>
+                        <h2>Consultation</h2>
+                        <p>Add a discription of your offer and key benefits</p>
+                    </div>
+                </div>
+                @*Dublicate*@
+                <div class="live-scroll-box col-md-4">
+                    <div class="service">
+                        <a class="fas fa-flask fa-4x"></a>
+                        <h2>Laboratory test</h2>
+                        <p>Add a discription of your offer and key benefits</p>
+                    </div>
+                    <div class="service">
+                        <a class="fas fa-wheelchair fa-4x"></a>
+                        <h2>Physiotherapy</h2>
+                        <p>Add a discription of your offer and key benefits</p>
+                    </div>
+                </div>
+                <div class="live-scroll-box col-md-4">
+                    <div class="service">
+                        <a class="fas fa-heartbeat fa-4x"></a>
+                        <h2>Cardiology</h2>
+                        <p>
+                            Add a discription of your offer and key benefits
+                            Add a discription of your offer and key benefits
+                        </p>
+                    </div>
+                    <div class="service">
+                        <a class="fas fa-ambulance fa-flip-horizontal fa-4x"></a>
+                        <h2>Emergency</h2>
+                        <p>Add a discription of your offer and key benefits</p>
+                    </div>
+                </div>
+                <div class="live-scroll-box col-md-4">
+                    <div class="service">
+                        <a class="fas fa-user-md fa-4x"></a>
+                        <h2>Neurology</h2>
+                        <p>Add a discription of your offer and key benefits</p>
+                    </div>
+                    <div class="service">
+                        <a class="fas fa-stethoscope fa-4x"></a>
+                        <h2>Consultation</h2>
+                        <p>Add a discription of your offer and key benefits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cl-team">
+        <div class="body-width">
+            <h2>Meet our team</h2>
+            <div class="live-scroll same-height">
+                <div class="live-scroll-box col-md-4 col-lg-4 col-sm-6">
+                    <div>
+                        <div>
+                            <img src="~/images/doctor1.jpg" />
+                        </div>
+                        <h4>Full Name</h4>
+                        <p>specialization</p>
+                    </div>
+                </div>
+                <div class="live-scroll-box col-lg-4 col-md-4 col-sm-6">
+                    <div>
+                        <img src="~/images/doctor2.jpg" />
+                    </div>
+                    <h4>Full Name</h4>
+                    <p>specialization</p>
+                </div>
+                <div class="live-scroll-box col-lg-4 col-md-4 col-sm-6">
+                    <div>
+                        <img src="~/images/doctor3.jpg" />
+                    </div>
+                    <h4>Full Name</h4>
+                    <p>specialization</p>
+                </div>
+                @*dublicate*@
+                <div class="live-scroll-box col-lg-4 col-md-4 col-sm-6">
+                    <div>
+                        <img src="~/images/doctor1.jpg" />
+                    </div>
+                    <h4>Full Name</h4>
+                    <p>specialization</p>
+                </div>
+                <div class="live-scroll-box col-lg-4 col-md-4 col-sm-6">
+                    <div>
+                        <img src="~/images/doctor2.jpg" />
+                    </div>
+                    <h4>Full Name</h4>
+                    <p>specialization</p>
+                </div>
+                <div class="live-scroll-box col-lg-4 col-md-4 col-sm-6">
+                    <div>
+                        <img src="~/images/doctor3.jpg" />
+                    </div>
+                    <h4>Full Name</h4>
+                    <p>specialization</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cl-social-proof">
+        <div class="body-width">
+            <h2>Social proof</h2>
+            <div class="row live-scroll">
+                <div class="live-scroll-box col-md-4 col-sm-6 social-proof-first social-proof-sameheight">
+                    <div class="social-live-scroll-box-div">
+                        <a class="fas fa-quote-right fa-4x"></a>
+                        <p>
+                            A few sentences about your product
+                            How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or fotos!
+                        </p>
+                        <p></p>
+                        <p>Your Customer Name</p>
+                    </div>
+                </div>
+                <div class="live-scroll-box  col-md-4 col-sm-6 social-proof-second social-proof-sameheight">
+                    <div class="social-live-scroll-box-div ">
+                        <a class="fas fa-quote-right fa-4x"></a>
+                        <p>
+                            How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or fotos!
+                        </p>
+                        <p></p>
+                        <p>Your Customer Name</p>
+                    </div>
+                </div>
+                <div class="live-scroll-box col-md-4 col-sm-6 social-proof-third social-proof-sameheight">
+                    <div class="social-live-scroll-box-div">
+                        <a class="fas fa-quote-right fa-4x"></a>
+                        <p>
+                            A few sentences about your product
+                            How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or fotos!
+                        </p>
+                        <p></p>
+                        <p>Your Customer Name</p>
+                    </div>
+                </div>
+                @*dublicate*@
+                <div class="live-scroll-box col-md-4 col-sm-6 social-proof-first social-proof-sameheight">
+                    <div class="social-live-scroll-box-div">
+                        <a class="fas fa-quote-right fa-4x"></a>
+                        <p>
+                            A few sentences about your product
+                            How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or fotos!
+                        </p>
+                        <p></p>
+                        <p>Your Customer Name</p>
+                    </div>
+                </div>
+                <div class="live-scroll-box col-md-4 col-sm-6 social-proof-second social-proof-sameheight">
+                    <div class="social-live-scroll-box-div">
+                        <a class="fas fa-quote-right fa-4x"></a>
+                        <p>
+                            A few sentences about your product
+                            How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or fotos!
+                        </p>
+                        <p></p>
+                        <p>Your Customer Name</p>
+                    </div>
+                </div>
+                <div class="live-scroll-box col-md-4 col-sm-6 social-proof-third social-proof-sameheight">
+                    <div class="social-live-scroll-box-div">
+                        <a class="fas fa-quote-right fa-4x"></a>
+                        <p>
+                            A few sentences about your product
+                            How it help tosolve clients problems. It shoud convince the unconvinced.
+                        </p>
+                        <p></p>
+                        <p>Your Customer Name</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cl-slogan">
+        <div class="body-width">
+            <div class="slogan-text">
+                <h1>Catchy/Convincing slogan</h1>
+                <p>A supporting statement for your Value Proposition to encourage customers to complete your CTA</p>
+                @*<button type="button" class="btn btn-info" onclick="scroll(0,0)">BOOKING A VISIT</button>*@
+                <a href="#" class="btn btn-info" onclick="scroll(0,0)">BOOKING A VISIT</a>
+                <p>or call us <a href="tel:1-222-333-44">1-222-333-444</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+

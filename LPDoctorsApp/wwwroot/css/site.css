@@ -1,0 +1,230 @@
+body {
+    padding: 0;
+    font-size:20px;
+}
+
+::-webkit-scrollbar {
+    height:9px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgb(128, 128, 128);
+    border-radius: 2px;
+    /*background-color:darkgrey;*/
+    height:2px;
+}
+.cl-team ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px snow;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: #00BFFF;
+    height:30px;
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
+}
+.body-content{
+    padding:0;
+    margin:0;
+}
+.tab-context {
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+.body-width {
+    padding: 0 15%;
+}
+.cl-main-window{
+    background:url(../images/doctor_main.jpg) right no-repeat;
+    background-color:white;
+    justify-content:center;
+    width:100%;
+    min-height:651px;
+    padding:0;
+}
+.cl-main-window-form {
+    display:block;
+    background-color:deepskyblue;
+    width:300px;
+    padding:30px 15px;
+    margin: 40px;
+}
+.cl-main-window-form h2{
+    color:white;
+}
+.cl-main-window-form p{
+    color:white;
+}
+
+
+.cl-contacts{
+    width:100%;
+    color:snow;
+    display:inline-block;
+    position:relative;
+    top:-100px;
+    margin-bottom:-100px;
+}
+.contact-live{
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.contact-first {
+    display:block;
+    background-color: deepskyblue;
+}
+
+.contact-second {
+    display: block;
+    background-color: dodgerblue;
+}
+
+.contact-third {
+    display: block;
+    background-color: royalblue;
+}
+.cl-contacts a {
+    color:snow;
+}
+
+.same-height{
+    display:flex;
+}
+@media (max-width: 860px){
+    .same-height{
+        display:block;
+        margin:0;
+    }
+}
+
+.cl-about{
+    margin:0;
+}
+
+
+
+.live-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    transform:scaleY(-1);
+    overflow-y:hidden;
+}
+
+
+.live-scroll-box {
+    display: inline-block;
+    float: none;
+    white-space: normal;
+    padding-right: 10%;
+    padding-top:10px;
+    transform:scaleY(-1);
+    margin-top: 0;
+    vertical-align:bottom;
+}
+.cl-about .live-scroll-box{
+    white-space:pre-line;
+    /*padding-top:0;*/
+
+}
+.about-same-height {
+    display: flex;
+}
+
+@media (max-width: 860px) {
+    .about-same-height {
+        display: block;
+        margin: 0;
+    }
+}
+.fas-list{
+    list-style-type:none;
+}
+.cl-services{
+    background-color:snow;
+    margin:0;
+}
+.cl-services .live-scroll * {
+    text-align: center;
+}
+/*.cl-services .live-scroll-box{
+    padding-top:10px;
+}*/
+
+
+.cl-team{
+    background:url(../images/team-fone.jpg);
+    background-size:100%;
+    color:snow;
+}
+.cl-team p{
+    color:deepskyblue;
+}
+.cl-team .live-scroll-box {
+    padding: 0, 20px;
+}
+.cl-team .live-scroll-box *{
+    text-align:center;
+}
+
+.cl-social-proof .live-scroll-box{
+    padding:0 5px;
+    margin-bottom:10px;
+}
+  
+
+    .social-proof-first {
+        background-color: deepskyblue;
+        color: white;
+    }
+.social-proof-second {
+    background-color: dodgerblue;
+    color: white;
+}
+.social-proof-third {
+    background-color: royalblue;
+    color: white;
+}
+.cl-social-proof .social-live-scroll-box-div a {
+    color: white;
+}
+.social-live-scroll-box {
+    display:inline-block;
+    float: none;
+    white-space: normal;
+    padding-right: 10%;
+    /*padding-top:3%;*/
+    transform:scaleY(-1);
+}
+
+.social-test-parent .social-proof-sameheight {
+    display: inline-block;
+    float:unset;
+    white-space:pre-wrap;
+    position:relative;
+    vertical-align:top;
+}
+.social-test-parent{
+    overflow-x:auto;
+    white-space:nowrap;
+}
+/*.social-live-scroll-box-div{
+        white-space:pre-line;
+    }*/
+.cl-slogan {
+    background: url(../images/doctor_footer.jpg) no-repeat right;
+    min-height: 537px;
+    background-color: rgb(223,227,230);
+}
+
+.cl-slogan span{
+    color:deepskyblue;
+}
+.slogan-text{
+    display:block;
+margin-top:100px;
+    max-width:300px;
+}
+.cl-slogan .body-width
+{padding-top:30px;}
+
