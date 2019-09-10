@@ -6,22 +6,22 @@ var ready;
 
 ready = function () {
 
-function alignmentByHeight(classname) {
-    var divs = $("div ." + classname);
-    var max = 100;
-    for (var i = 0; i < divs.length; i++) {
-        if (max < $(divs[i]).height()) {
-            max = $(divs[i]).height();
+    function alignmentByHeight(classname) {
+        var divs = $("div ." + classname);
+        var max = 100;
+        for (var i = 0; i < divs.length; i++) {
+            if (max < $(divs[i]).height()) {
+                max = $(divs[i]).height();
+            }
         }
+        $(divs).css('min-height', max + 'px');
     }
-    $(divs).css('min-height', max + 'px');
-}
 
-$(document).ready(function () {
-    
-    alignmentByHeight('cl-about .live-scroll-box');
-    alignmentByHeight('service');
-    alignmentByHeight('social-proof-sameheight');
+    $(document).ready(function () {
+
+        alignmentByHeight('cl-about .live-scroll-box');
+        alignmentByHeight('service');
+        alignmentByHeight('social-proof-sameheight');
 
     });
 

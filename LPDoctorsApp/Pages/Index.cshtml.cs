@@ -24,8 +24,7 @@ namespace LPDoctorsApp.Pages
         [DataType(DataType.Date)]
         public DateTime VisitDate { get; set; }
 
-        public bool IsOrderNotSended { get; set; }
-
+        public string MessageSended { get; set; }
 
         public void OnGet()  {}
 
@@ -36,7 +35,13 @@ namespace LPDoctorsApp.Pages
                 string mesaage = name + " " + email + " " + visitDate.ToShortDateString();
                 EmailSender sendEmail = new EmailSender();
                 await sendEmail.SendEmailAsync("New visit registration", mesaage);
-                IsOrderNotSended = true;
+                ViewData["MessageSuccess"] = "Thank you for ordering our services.";
+                ViewData["MessageDanger"] = null;
+            }
+            else
+            {
+                ViewData["MessageSuccess"] = null;
+                ViewData["MessageDanger"] = "Please correct your data.";
             }
         }
     }
