@@ -1,0 +1,291 @@
+body {
+    /*padding: 0;*/
+    /*font-size:20px;*/
+}
+
+::-webkit-scrollbar {
+    height:10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgb(128, 128, 128);
+    border-radius: 2px;
+    height: 2px;
+}
+.cl-team ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px white;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    background: #00BFFF;
+    
+}
+.body-content{
+    padding:0;
+    margin:0;
+}
+.tab-context {
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+.body-width {
+    padding: 0 17%;
+}
+.cl-main-window {
+    background: url(../images/doctor_main.jpg) right no-repeat;
+    background-size:contain;
+    background-color: #cbcbcb;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+    min-height: 651px;
+    padding: 0;
+    padding-top:40px;
+}
+.cl-main-window-form {
+    display: block;
+    /*background-color:deepskyblue;*/
+    background-color: #4ecded;
+    /*min-width:300px;*/
+    padding: 40px 50px;
+    /*margin-top: 40px;*/
+    min-width:390px;
+}
+.cl-main-window-form input{
+    padding:20px 5px;
+}
+.cl-main-window .btn-info {
+    background-color: black;
+    padding-left:40px;
+    padding-right:40px;
+}
+.cl-main-window-form h1{
+    color:white;
+}
+.cl-main-window-form p{
+    color:white;
+}
+.cl-main-window p span{
+    font-size:larger;
+}
+
+.cl-main-window .form-group{
+    margin-bottom:5px;
+}
+
+.cl-contacts {
+    width: 100%;
+    color: snow;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
+}
+.contact-live{
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.contact-first {
+    display: block;
+    background-color: #4ecded;
+}
+
+.contact-second {
+    display: block;
+    background-color: #3c88d4;
+}
+
+.contact-third {
+    display: block;
+    background-color: #1c4970;
+}
+.cl-contacts a {
+    color: #4ecded;
+}
+
+.same-height{
+    display:flex;
+}
+@media (max-width: 860px){
+    .same-height{
+        display:block;
+        margin:0;
+    }
+}
+
+.cl-about{
+    margin:0;
+}
+
+.cl-about h2{
+    font-weight:bold;
+}
+
+    .cl-about li {
+        color: #3c88d4;
+    }
+    .cl-about span{
+        color:black;
+    }
+
+    .live-scroll {
+        overflow-x: auto;
+        white-space: nowrap;
+        transform: scaleY(-1);
+        overflow-y: hidden;
+    }
+
+
+.live-scroll-box {
+    display: inline-block;
+    float: none;
+    white-space: normal;
+    padding-right: 10%;
+    padding-top:10px;
+    transform:scaleY(-1);
+    margin-top: 0;
+    vertical-align:bottom;
+}
+.cl-about .live-scroll-box{
+    white-space:pre-line;
+    /*padding-top:0;*/
+
+}
+.about-same-height {
+    display: flex;
+}
+
+@media (max-width: 860px) {
+    .about-same-height {
+        display: block;
+        margin: 0;
+    }
+}
+.fas-list{
+    list-style-type:none;
+}
+.cl-services{
+    background-color:snow;
+    margin:0;
+}
+.cl-services h2{
+    font-weight:bold;
+}
+.service p{
+    color:darkgray;
+}
+.cl-services .live-scroll * {
+    text-align: center;
+}
+.cl-services .live-scroll-box{
+    padding-right:3%;
+}
+.service{
+    padding-top:10%;
+}
+/*.cl-services .live-scroll-box{
+    padding-top:10px;
+}*/
+.cl-team {
+    background: url(../images/team-fone.jpg);
+    /*background-size: 100%;*/
+    background-size:cover;
+    color: snow;
+}
+.cl-team .body-width{
+    padding-top:3%;
+    padding-bottom:2%;
+}
+.cl-team h2{
+    font-weight:bold;
+}
+.cl-team p{
+    color:deepskyblue;
+}
+.cl-team .live-scroll-box {
+    padding: 10px 20px;
+}
+.cl-team .live-scroll-box *{
+    text-align:center;
+}
+
+.cl-social-proof .live-scroll-box{
+    padding:0 5px;
+    margin-bottom:10px;
+}
+.cl-social-proof h2{
+    font-weight:bold;
+}
+
+.social-proof-first {
+    /*background-color: deepskyblue;*/
+    background-color: #4ecded;
+    color: white;
+}
+.social-proof-second {
+    /*background-color: dodgerblue;*/
+    background-color: #3c88d4;
+    color: white;
+}
+.social-proof-third {
+    background-color: #1c4970;
+    color: white;
+}
+.cl-social-proof .social-live-scroll-box-div a {
+    color: white;
+}
+.social-live-scroll-box {
+    display:inline-block;
+    float: none;
+    white-space: normal;
+    padding-right: 10%;
+    /*padding-top:3%;*/
+    transform:scaleY(-1);
+}
+.social-live-scroll-box-div{
+    margin:10%;
+}
+.social-live-scroll-box-div p span{
+    font-style:italic;
+}
+.social-test-parent .social-proof-sameheight {
+    display: inline-block;
+    float:unset;
+    white-space:pre-wrap;
+    position:relative;
+    vertical-align:top;
+}
+.social-test-parent{
+    overflow-x:auto;
+    white-space:nowrap;
+}
+.cl-social-proof a{
+    font-size:larger;
+}
+
+.cl-slogan {
+    background: url(../images/doctor_footer.jpg) no-repeat right;
+    min-height: 537px;
+    background-color: #dde2e6;
+    font-size:large;
+}
+.cl-slogan h1{
+    font-weight:bold;
+}
+    .cl-slogan span {
+        color: #4ecded;
+    }
+.slogan-text{
+    display:block;
+margin-top:100px;
+    max-width:300px;
+}
+.cl-slogan .body-width
+{padding-top:30px;}
+
+.cl-slogan span a{
+    padding: 10px 30px;
+}
+

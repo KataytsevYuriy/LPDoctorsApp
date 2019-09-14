@@ -36,11 +36,11 @@ namespace LPDoctorsApp.Pages
                 EmailSender sendEmail = new EmailSender();
                 await sendEmail.SendEmailAsync("New visit registration", mesaage);
                 ViewData["MessageSuccess"] = "Thank you for ordering our services.";
-                ViewData["MessageDanger"] = null;
+                //ViewData["MessageDanger"] = null;
             }
             else
             {
-                ViewData["MessageSuccess"] = null;
+                //ViewData["MessageSuccess"] = null;
                 ViewData["MessageDanger"] = "Please correct your data.";
             }
         }

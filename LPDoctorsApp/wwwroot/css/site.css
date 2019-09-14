@@ -1,17 +1,16 @@
 body {
-    padding: 0;
-    font-size:20px;
+    /*padding: 0;*/
+    /*font-size:20px;*/
 }
 
 ::-webkit-scrollbar {
-    height:9px;
+    height:10px;
 }
 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 2px rgb(128, 128, 128);
     border-radius: 2px;
-    /*background-color:darkgrey;*/
-    height:2px;
+    height: 2px;
 }
 .cl-team ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 2px white;
@@ -19,8 +18,7 @@ body {
 ::-webkit-scrollbar-thumb {
     border-radius: 7px;
     background: #00BFFF;
-    height:30px;
-    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
+    
 }
 .body-content{
     padding:0;
@@ -32,38 +30,57 @@ body {
     padding:0;
 }
 .body-width {
-    padding: 0 15%;
+    padding: 0 17%;
 }
-.cl-main-window{
-    background:url(../images/doctor_main.jpg) right no-repeat;
-    background-color:white;
-    justify-content:center;
-    width:100%;
-    min-height:651px;
-    padding:0;
+.cl-main-window {
+    background: url(../images/doctor_main.jpg) right no-repeat;
+    background-size:contain;
+    background-color: #cbcbcb;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+    min-height: 651px;
+    padding: 0;
+    padding-top:40px;
 }
 .cl-main-window-form {
-    display:block;
-    background-color:deepskyblue;
-    width:300px;
-    padding:30px 15px;
-    margin: 40px;
+    display: block;
+    /*background-color:deepskyblue;*/
+    background-color: #4ecded;
+    /*min-width:300px;*/
+    padding: 40px 50px;
+    /*margin-top: 40px;*/
+    min-width:390px;
 }
-.cl-main-window-form h2{
+.cl-main-window-form input{
+    padding:20px 5px;
+}
+.cl-main-window .btn-info {
+    background-color: black;
+    padding-left:40px;
+    padding-right:40px;
+}
+.cl-main-window-form h1{
     color:white;
 }
 .cl-main-window-form p{
     color:white;
 }
+.cl-main-window p span{
+    font-size:larger;
+}
 
+.cl-main-window .form-group{
+    margin-bottom:5px;
+}
 
-.cl-contacts{
-    width:100%;
-    color:snow;
-    display:inline-block;
-    position:relative;
-    top:-50px;
-    margin-bottom:-50px;
+.cl-contacts {
+    width: 100%;
+    color: snow;
+    display: inline-block;
+    position: relative;
+    top: -50px;
+    margin-bottom: -50px;
 }
 .contact-live{
     overflow-x:auto;
@@ -71,21 +88,21 @@ body {
 }
 
 .contact-first {
-    display:block;
-    background-color: deepskyblue;
+    display: block;
+    background-color: #4ecded;
 }
 
 .contact-second {
     display: block;
-    background-color: dodgerblue;
+    background-color: #3c88d4;
 }
 
 .contact-third {
     display: block;
-    background-color: royalblue;
+    background-color: #1c4970;
 }
 .cl-contacts a {
-    color:snow;
+    color: #4ecded;
 }
 
 .same-height{
@@ -102,14 +119,23 @@ body {
     margin:0;
 }
 
-
-
-.live-scroll {
-    overflow-x: auto;
-    white-space: nowrap;
-    transform:scaleY(-1);
-    overflow-y:hidden;
+.cl-about h2{
+    font-weight:bold;
 }
+
+    .cl-about li {
+        color: #3c88d4;
+    }
+    .cl-about span{
+        color:black;
+    }
+
+    .live-scroll {
+        overflow-x: auto;
+        white-space: nowrap;
+        transform: scaleY(-1);
+        overflow-y: hidden;
+    }
 
 
 .live-scroll-box {
@@ -144,24 +170,42 @@ body {
     background-color:snow;
     margin:0;
 }
+.cl-services h2{
+    font-weight:bold;
+}
+.service p{
+    color:darkgray;
+}
 .cl-services .live-scroll * {
     text-align: center;
+}
+.cl-services .live-scroll-box{
+    padding-right:3%;
+}
+.service{
+    padding-top:10%;
 }
 /*.cl-services .live-scroll-box{
     padding-top:10px;
 }*/
-
-
-.cl-team{
-    background:url(../images/team-fone.jpg);
-    background-size:100%;
-    color:snow;
+.cl-team {
+    background: url(../images/team-fone.jpg);
+    /*background-size: 100%;*/
+    background-size:cover;
+    color: snow;
+}
+.cl-team .body-width{
+    padding-top:3%;
+    padding-bottom:2%;
+}
+.cl-team h2{
+    font-weight:bold;
 }
 .cl-team p{
     color:deepskyblue;
 }
 .cl-team .live-scroll-box {
-    padding: 0, 20px;
+    padding: 10px 20px;
 }
 .cl-team .live-scroll-box *{
     text-align:center;
@@ -171,18 +215,22 @@ body {
     padding:0 5px;
     margin-bottom:10px;
 }
-  
+.cl-social-proof h2{
+    font-weight:bold;
+}
 
-    .social-proof-first {
-        background-color: deepskyblue;
-        color: white;
-    }
+.social-proof-first {
+    /*background-color: deepskyblue;*/
+    background-color: #4ecded;
+    color: white;
+}
 .social-proof-second {
-    background-color: dodgerblue;
+    /*background-color: dodgerblue;*/
+    background-color: #3c88d4;
     color: white;
 }
 .social-proof-third {
-    background-color: royalblue;
+    background-color: #1c4970;
     color: white;
 }
 .cl-social-proof .social-live-scroll-box-div a {
@@ -196,7 +244,12 @@ body {
     /*padding-top:3%;*/
     transform:scaleY(-1);
 }
-
+.social-live-scroll-box-div{
+    margin:10%;
+}
+.social-live-scroll-box-div p span{
+    font-style:italic;
+}
 .social-test-parent .social-proof-sameheight {
     display: inline-block;
     float:unset;
@@ -208,18 +261,22 @@ body {
     overflow-x:auto;
     white-space:nowrap;
 }
-/*.social-live-scroll-box-div{
-        white-space:pre-line;
-    }*/
+.cl-social-proof a{
+    font-size:larger;
+}
+
 .cl-slogan {
     background: url(../images/doctor_footer.jpg) no-repeat right;
     min-height: 537px;
-    background-color: rgb(223,227,230);
+    background-color: #dde2e6;
+    font-size:large;
 }
-
-.cl-slogan span{
-    color:deepskyblue;
+.cl-slogan h1{
+    font-weight:bold;
 }
+    .cl-slogan span {
+        color: #4ecded;
+    }
 .slogan-text{
     display:block;
 margin-top:100px;
@@ -227,4 +284,8 @@ margin-top:100px;
 }
 .cl-slogan .body-width
 {padding-top:30px;}
+
+.cl-slogan span a{
+    padding: 10px 30px;
+}
 

@@ -10,31 +10,33 @@
 <div class="tab-content">
     <div class="cl-main-window ">
         <div class="body-width">
-            <div class="cl-main-window-form">
-                <div>
-                    <h4>HEALTH CENTER</h4>
-                    <h2>Catchy/Convincing slogan</h2>
+            <div class="cl-main-window-form col-md-6">
+                <div class="">
+                    <h4><strong>HEALTH CENTER</strong></h4>
+                    <h1><strong>Catchy/Convincing slogan</strong></h1>
+                    <br />
                     <p>A supporting statement for your Value Proposition to ecourage customers to complite your CTA</p>
-                    <p>BOOKING A VISIT  <span class="fas fa-angle-down fa-1x"></span></p>
-                        <form method="post">
-                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                            <div class="form-group">
-                                <input asp-for="Name" class="form-control" placeholder="YOUR NAME" />
-                                <span asp-validation-for="Name"></span>
-                            </div>
-                            <div class="form-group">
-                                <input asp-for="Email" class="form-control" placeholder="YOUR E-MAIL" />
-                                <span asp-validation-for="Email"></span>
-                            </div>
-                            <div class="form-group">
-                                <input asp-for="VisitDate" type="text" class="form-control" placeholder="SELECT A DATE" value=""
-                                       onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" />
-                                <span asp-validation-for="VisitDate"></span>
-                            </div>
-                            <div class="form-group">
-                                <input type="submit" value="Send" class=" btn btn-dark" />
-                            </div>
-                        </form>
+                    <br />
+                    <p><span>BOOKING A VISIT  <span class="fas fa-angle-down fa-1x"></span></span></p>
+                    <form method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <input asp-for="Name" class="form-control" placeholder="YOUR NAME" />
+                            <span asp-validation-for="Name"></span>
+                        </div>
+                        <div class="form-group">
+                            <input asp-for="Email" class="form-control" placeholder="YOUR E-MAIL" />
+                            <span asp-validation-for="Email"></span>
+                        </div>
+                        <div class="form-group">
+                            <input asp-for="VisitDate" type="text" class="form-control" placeholder="SELECT A DATE" value=""
+                                   onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" />
+                            <span asp-validation-for="VisitDate"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="SEND" class=" btn btn-info" />
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -43,8 +45,9 @@
         <div class="body-width ">
             <div class="same-height">
                 <div class="col-md-4 col-lg-4  col-sm-4 contact-first">
-                    <i class="fa fa-clock-o fa-3x " aria-hidden="true"></i>
-                    <h2>Working Time</h2>
+                    <br />
+                    <i class="fa fa-clock-o fa-2x " aria-hidden="true"></i>
+                    <h3>Working Time</h3>
                     <br />
                     <p>Monday - Friday: 8.00 - 17.00</p>
                     <hr />
@@ -52,20 +55,22 @@
                     <hr />
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-4 contact-second">
-                    <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
-                    <h2>Contact us</h2>
                     <br />
-                    <p><a href="tel:1-222-333-4444"><span>1-222-333-4444</span></a></p>
+                    <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                    <h3>Contact us</h3>
+                    <br />
+                    <p><a href="tel:1-222-333-4444"><span><big><big>1-222-333-4444</big></big></span></a></p>
                     <br />
                     <p>Lorem ipsem dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-4 contact-third">
-                    <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
-                    <h2>Where are we?</h2>
+                    <br />
+                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                    <h3>Where are we?</h3>
                     <br />
                     <p>Witkiewicza 6</p>
-                    <br />
                     <p>44-100, Gliwice</p>
+                    <br />
                     <p><a href="https://goo.gl/maps/3AEnyJbPP4ZeUKN78">Get direction on the map</a></p>
                 </div>
             </div>
@@ -84,9 +89,9 @@
                     </div>
                     <div class="col-md-4">
                         <ul class="fas fas-list">
-                            <li class=" fa-check"> Youre value proposition</li>
-                            <li class=" fa-check"> Strong point</li>
-                            <li class="fa-check"> How will this help solve the customer's issues in the future</li>
+                            <li class=" fa-check"> <span>Youre value proposition</span></li>
+                            <li class=" fa-check"><span> Strong point</span></li>
+                            <li class="fa-check"> <span>How will this help solve the customer's issues in the future</span></li>
                         </ul>
                     </div>
                 </div>
@@ -103,9 +108,9 @@
                     </div>
                     <div class="col-md-4">
                         <ul class=" fas fas-list">
-                            <li class="fa-check"> Youre value proposition</li>
-                            <li class="fa-check"> Strong point</li>
-                            @*<li class="fa-check"> How will this help solve the customer's issues in the future</li>*@
+                            @*<li class=" fa-check"> <span>Youre value proposition</span></li>*@
+                            <li class=" fa-check"><span> Strong point</span></li>
+                            <li class="fa-check"> <span>How will this help solve the customer's issues in the future</span></li>
                         </ul>
                     </div>
                 </div>
@@ -120,9 +125,9 @@
                     </div>
                     <div class="col-md-4">
                         <ul class=" fas fas-list">
-                            <li class="fa-check"> Youre value proposition</li>
-                            <li class="fa-check"> Strong point</li>
-                            <li class="fa-check"> How will this help solve the customer's issues in the future</li>
+                            <li class=" fa-check"> <span>Youre value proposition</span></li>
+                            <li class=" fa-check"><span> Strong point</span></li>
+                            <li class="fa-check"> <span>How will this help solve the customer's issues in the future</span></li>
                         </ul>
                     </div>
                 </div>
@@ -136,9 +141,9 @@
                     </div>
                     <div class="col-md-4">
                         <ul class=" fas fas-list">
-                            <li class="fa-check"> Youre value proposition</li>
-                            <li class="fa-check"> Strong point</li>
-                            <li class="fa-check"> How will this help solve the customer's issues in the future</li>
+                            <li class=" fa-check"> <span>Youre value proposition</span></li>
+                            <li class=" fa-check"><span> Strong point</span></li>
+                            <li class="fa-check"> <span>How will this help solve the customer's issues in the future</span></li>
                         </ul>
                     </div>
                 </div>
@@ -152,80 +157,80 @@
                 <div class="live-scroll-box col-md-4">
 
                     <div class="service">
-                        <a class="fas fa-flask fa-4x"></a>
-                        <h2>Laboratory test</h2>
+                        <a class="fas fa-flask fa-3x"></a>
+                        <h3>Laboratory test</h3>
                         <p>Add a discription of your offer and key benefits</p>
                     </div>
                     <div class="service">
-                        <a class="fas fa-wheelchair fa-4x"></a>
-                        <h2>Physiotherapy</h2>
+                        <a class="fas fa-wheelchair fa-3x"></a>
+                        <h3>Physiotherapy</h3>
                         <p>Add a discription of your offer and key benefits</p>
                     </div>
                 </div>
                 <div class="live-scroll-box col-md-4">
                     <div class="service">
-                        <a class="fas fa-heartbeat fa-4x"></a>
-                        <h2>Cardiology</h2>
+                        <a class="fas fa-heartbeat fa-3x"></a>
+                        <h3>Cardiology</h3>
                         <p>
                             Add a discription of your offer and key benefits
                             Add a discription of your offer and key benefits
                         </p>
                     </div>
                     <div class="service">
-                        <a class="fas fa-ambulance fa-flip-horizontal fa-4x"></a>
-                        <h2>Emergency</h2>
+                        <a class="fas fa-ambulance fa-flip-horizontal fa-3x"></a>
+                        <h3>Emergency</h3>
                         <p>Add a discription of your offer and key benefits</p>
                     </div>
                 </div>
                 <div class="live-scroll-box col-md-4">
                     <div class="service">
-                        <a class="fas fa-user-md fa-4x"></a>
-                        <h2>Neurology</h2>
+                        <a class="fas fa-user-md fa-3x"></a>
+                        <h3>Neurology</h3>
                         <p>Add a discription of your offer and key benefits</p>
                     </div>
                     <div class="service">
-                        <a class="fas fa-stethoscope fa-4x"></a>
-                        <h2>Consultation</h2>
+                        <a class="fas fa-stethoscope fa-3x"></a>
+                        <h3>Consultation</h3>
                         <p>Add a discription of your offer and key benefits</p>
                     </div>
                 </div>
                 @*Dublicate*@
                 <div class="live-scroll-box col-md-4">
                     <div class="service">
-                        <a class="fas fa-flask fa-4x"></a>
-                        <h2>Laboratory test</h2>
+                        <a class="fas fa-flask fa-3x"></a>
+                        <h3>Laboratory test</h3>
                         <p>Add a discription of your offer and key benefits</p>
                     </div>
                     <div class="service">
-                        <a class="fas fa-wheelchair fa-4x"></a>
-                        <h2>Physiotherapy</h2>
+                        <a class="fas fa-wheelchair fa-3x"></a>
+                        <h3>Physiotherapy</h3>
                         <p>Add a discription of your offer and key benefits</p>
                     </div>
                 </div>
                 <div class="live-scroll-box col-md-4">
                     <div class="service">
-                        <a class="fas fa-heartbeat fa-4x"></a>
-                        <h2>Cardiology</h2>
+                        <a class="fas fa-heartbeat fa-3x"></a>
+                        <h3>Cardiology</h3>
                         <p>
                             Add a discription of your offer and key benefits
                             Add a discription of your offer and key benefits
                         </p>
                     </div>
                     <div class="service">
-                        <a class="fas fa-ambulance fa-flip-horizontal fa-4x"></a>
-                        <h2>Emergency</h2>
+                        <a class="fas fa-ambulance fa-flip-horizontal fa-3x"></a>
+                        <h3>Emergency</h3>
                         <p>Add a discription of your offer and key benefits</p>
                     </div>
                 </div>
                 <div class="live-scroll-box col-md-4">
                     <div class="service">
-                        <a class="fas fa-user-md fa-4x"></a>
-                        <h2>Neurology</h2>
+                        <a class="fas fa-user-md fa-3x"></a>
+                        <h3>Neurology</h3>
                         <p>Add a discription of your offer and key benefits</p>
                     </div>
                     <div class="service">
-                        <a class="fas fa-stethoscope fa-4x"></a>
-                        <h2>Consultation</h2>
+                        <a class="fas fa-stethoscope fa-3x"></a>
+                        <h3>Consultation</h3>
                         <p>Add a discription of your offer and key benefits</p>
                     </div>
                 </div>
@@ -290,10 +295,13 @@
             <div class="row live-scroll">
                 <div class="live-scroll-box col-md-4 col-sm-6 social-proof-first social-proof-sameheight">
                     <div class="social-live-scroll-box-div">
-                        <a class="fas fa-quote-right fa-4x"></a>
+                        <a class="fas fa-quote-right"></a>
+                        <br /> <br />
                         <p>
-                            A few sentences about your product
-                            How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or fotos!
+                            <span>
+                                A few sentences about your product
+                                How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or photos!
+                            </span>
                         </p>
                         <p></p>
                         <p>Your Customer Name</p>
@@ -301,9 +309,12 @@
                 </div>
                 <div class="live-scroll-box  col-md-4 col-sm-6 social-proof-second social-proof-sameheight">
                     <div class="social-live-scroll-box-div ">
-                        <a class="fas fa-quote-right fa-4x"></a>
+                        <a class="fas fa-quote-right "></a>
+                        <br /> <br />
                         <p>
-                            How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or fotos!
+                            <span>
+                                How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or photos!
+                            </span>
                         </p>
                         <p></p>
                         <p>Your Customer Name</p>
@@ -311,10 +322,13 @@
                 </div>
                 <div class="live-scroll-box col-md-4 col-sm-6 social-proof-third social-proof-sameheight">
                     <div class="social-live-scroll-box-div">
-                        <a class="fas fa-quote-right fa-4x"></a>
+                        <a class="fas fa-quote-right "></a>
+                        <br /> <br />
                         <p>
-                            A few sentences about your product
-                            How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or fotos!
+                            <span>
+                                A few sentences about your product
+                                How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or photos!
+                            </span>
                         </p>
                         <p></p>
                         <p>Your Customer Name</p>
@@ -323,10 +337,13 @@
                 @*dublicate*@
                 <div class="live-scroll-box col-md-4 col-sm-6 social-proof-first social-proof-sameheight">
                     <div class="social-live-scroll-box-div">
-                        <a class="fas fa-quote-right fa-4x"></a>
+                        <a class="fas fa-quote-right"></a>
+                        <br /> <br />
                         <p>
-                            A few sentences about your product
-                            How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or fotos!
+                            <span>
+                                A few sentences about your product
+                                How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or photos!
+                            </span>
                         </p>
                         <p></p>
                         <p>Your Customer Name</p>
@@ -334,10 +351,13 @@
                 </div>
                 <div class="live-scroll-box col-md-4 col-sm-6 social-proof-second social-proof-sameheight">
                     <div class="social-live-scroll-box-div">
-                        <a class="fas fa-quote-right fa-4x"></a>
+                        <a class="fas fa-quote-right "></a>
+                        <br /> <br />
                         <p>
-                            A few sentences about your product
-                            How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or fotos!
+                            <span>
+                                A few sentences about your product
+                                How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or photos!
+                            </span>
                         </p>
                         <p></p>
                         <p>Your Customer Name</p>
@@ -345,10 +365,13 @@
                 </div>
                 <div class="live-scroll-box col-md-4 col-sm-6 social-proof-third social-proof-sameheight">
                     <div class="social-live-scroll-box-div">
-                        <a class="fas fa-quote-right fa-4x"></a>
+                        <a class="fas fa-quote-right"></a>
+                        <br /> <br />
                         <p>
-                            A few sentences about your product
-                            How it help tosolve clients problems. It shoud convince the unconvinced.
+                            <span>
+                                A few sentences about your product
+                                How it help tosolve clients problems. It shoud convince the unconvinced. No fake quotes or photos!
+                            </span>
                         </p>
                         <p></p>
                         <p>Your Customer Name</p>
@@ -363,8 +386,8 @@
             <div class="slogan-text">
                 <h1>Catchy/Convincing slogan</h1>
                 <p>A supporting statement for your Value Proposition to encourage customers to complete your CTA</p>
-                @*<button type="button" class="btn btn-info" onclick="scroll(0,0)">BOOKING A VISIT</button>*@
-                <a href="#" class="btn btn-info" onclick="scroll(0,0)">BOOKING A VISIT</a>
+                <br />
+                <span><a href="#" class="btn btn-info" onclick="scroll(0,0)">BOOKING A VISIT</a></span>
                 <p>or call us <a href="tel:1-222-333-44">1-222-333-444</a></p>
             </div>
         </div>

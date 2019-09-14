@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] </title>
-
-    <environment include="Development">
+        <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
@@ -25,35 +24,12 @@
     {
         <div class="alert alert-danger">@ViewData["MessageDanger"]</div>
     }
-    @*<nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a asp-page="/Index" class="navbar-brand">LPDoctorsApp</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a asp-page="/Index">Home</a></li>
-                        <li><a asp-page="/About">About</a></li>
-                        <li><a asp-page="/Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>*@
-
-    @* <partial name="_CookieConsentPartial" />*@
+     @* <partial name="_CookieConsentPartial" />*@
     <script src="https://kit.fontawesome.com/074d995d01.js"></script>
     <div class="body-content">
         @RenderBody()
-        <hr />
-
+        @*<hr />*@
     </div>
-
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
@@ -75,11 +51,6 @@
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
     <partial name="_ValidationScriptsPartial" />
-    @*<div class="body-content">
-            @RenderBody()
-            <hr />
-
-        </div>*@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
