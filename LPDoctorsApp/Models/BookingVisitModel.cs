@@ -18,6 +18,7 @@ namespace LPDoctorsApp.Models
 
         [Required]
         [DataType(DataType.Date)]
-        public DateTime VisitDate { get; set; }
+        public DateTime VisitDate { get;
+            set; }
     }
 }
