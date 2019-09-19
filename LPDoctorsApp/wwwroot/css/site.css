@@ -54,7 +54,16 @@ body {
     /*margin-top: 40px;*/
     min-width:390px;
 }
-.cl-main-window-form input{
+@media (max-width:470px){
+    .cl-main-window-form{
+        padding:40px 0;
+    }
+    .body-width{
+        padding: 0 5%;
+    }
+}
+
+.cl-main-window-form input {
     padding:20px 5px;
 }
 .cl-main-window .btn-info {
